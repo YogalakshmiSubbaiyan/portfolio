@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import './App.css'
 import LeftSideBarComponent from './leftSideBarComponent/leftSideBar'
+import MainComponent from './mainComponent/mainComponent'
+import RightSideBarComponent from './rightSideBarComponent/rightSideBar'
 
 
 function App() {
@@ -11,8 +13,8 @@ function App() {
       <div className='appContainer'>
         <div className='layout-container'>
           <LeftSideBarComponent />
-          <div>Col1</div>
-          <div>Col1</div>
+          <MainComponent/>
+          <RightSideBarComponent/>
         </div>
       </div>
     </>

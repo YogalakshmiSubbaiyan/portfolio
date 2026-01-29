@@ -1,21 +1,22 @@
 .left-sidebar {
 	padding: 10px;
-	margin: 10px;
-	background-color: rgb(211, 211, 207);
+	margin: 0;
+	background-color: white;
 	border-radius: 10px;
 	box-shadow: none;
-
+	height: 100%;
+	box-sizing: border-box;
 }
 
 .personal-details {
 	border-bottom: 2px solid gray;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 	margin: 10px;
+	font-size: 14px;
 
 	label {
-		padding: 5px;
 		font-weight: bold;
-		background-color: cornflowerblue;
+		color: black
 	}
 
 }
@@ -51,7 +52,7 @@
 .detail-row {
 	display: flex;
 	justify-content: space-between;
-	padding: 8px 0;
+	padding: 5px 0;
 }
 
 .success {
@@ -74,7 +75,7 @@
 }
 
 .language-details {
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 	margin: 10px;
 	border-bottom: 2px solid gray;
 	border-radius: 1px;
@@ -84,17 +85,14 @@
 		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	}
 
+	label {
+		font-weight: bold;
+		color: black
+	}
+
 }
 
-.extra-details {
-	margin: 10px;
-}
-
-.extra-skill-item {
-	margin: 5px 0;
-}
-
-.button-downnload {
+.button-download {
 	width: 100%;
 	padding: 15px;
 	margin-top: 10px;
@@ -105,4 +103,51 @@
 	font-weight: bold;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
+}
+
+.social-links {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.linkedin-icon,
+.github-icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	font-family: Arial, sans-serif;
+}
+
+.linkedin-link {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: #0077b5;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+}
+
+.github-link {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: #333;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+	margin-left: 10px;
+}
+
+.github-link:hover {
+	background-color: #000;
+}
+
+.linkedin-link:hover {
+	background-color: cornflowerblue;
 }

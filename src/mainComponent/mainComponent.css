@@ -1,0 +1,39 @@
+.mainComponent{ 
+    padding: 10px;
+    margin-right: 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+.about-section {
+    width:100%;
+    background-color: white;
+	border-radius: 10px;
+    box-shadow: none;
+    padding:10px;
+    margin-left: 5px;
+    margin-right: 10px;
+   justify-content: space-around;
+
+   h5{
+    font-size: 20px;
+    margin-left:25px;
+   }
+   p {
+    font-size: 15px;
+    margin: 25px;
+    color:gray
+   }
+}
+.project-layout {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+    box-sizing: border-box;
+}
+.project {
+    width:100%;
+    height: 100%;
+    background-color: white;
+	border-radius: 10px;
+    box-shadow: none;
+}
