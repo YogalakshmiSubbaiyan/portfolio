@@ -35,14 +35,12 @@ const projects = [
     stack: ['Angular', 'Node.js', 'REST APIs']
   }
 ]
-
 export default function MainComponent() {
   return (
     <div className="mainComponent">
       <section className="hero-section">
         <div className="hero-copy">
-          <p className="eyebrow">Available for product-focused frontend work</p>
-          <h1>I build React frontends that ship.</h1>
+          <h1>I build frontends that ship.</h1>
           <p className="hero-text">
             I’m Yogalakshmi Subbaiyan, a full-stack developer focused on creating clean, user-centered interfaces that make complex products feel effortless.
           </p>
@@ -56,21 +54,15 @@ export default function MainComponent() {
             <span className="stat-pill">UI Systems</span>
           </div>
         </div>
-
-        <div className="hero-card">
-          <p className="hero-card-title">Currently focused on</p>
-          <ul>
-            <li>Designing scalable frontend architecture</li>
-            <li>Shipping thoughtful product experiences</li>
-            <li>Turning ideas into maintainable features</li>
-          </ul>
-        </div>
       </section>
 
       <section id="about" className="content-section">
         <h2>About</h2>
         <p>
-          I enjoy turning ideas into usable, polished web experiences. My work blends strong engineering habits with an eye for detail, so products feel both performant and intuitive.
+          I enjoy turning ideas into usable, polished web experiences. My work blends strong engineering habits with an eye for detail, creating products that are both performant and intuitive. I enjoy collaborating with cross-functional teams, solving complex problems, and continuously learning new technologies to build better digital experiences.
+        </p>
+        <p>
+          When I&apos;m not coding, you&apos;ll probably find me exploring my creative side through pottery, painting, and various arts and crafts. I&apos;m naturally a creative person, and I enjoy bringing that same curiosity, attention to detail, and thoughtful design mindset into the products I build.
         </p>
       </section>
 

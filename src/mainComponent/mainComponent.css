@@ -4,6 +4,8 @@
   gap: 20px;
 }
 
+/* single-column layout — removed two-column grid */
+
 .hero-section {
   display: grid;
   grid-template-columns: 1.5fr 0.8fr;
@@ -123,6 +125,8 @@
   box-shadow: 0 10px 30px rgba(2, 8, 23, 0.24);
 }
 
+/* no right-section in single-column layout */
+
 .content-section h2 {
   margin: 0 0 12px;
   color: #f8fafc;
@@ -220,7 +224,7 @@
 }
 
 @media (max-width: 940px) {
-  .hero-section {
+  .content-grid {
     grid-template-columns: 1fr;
   }
 

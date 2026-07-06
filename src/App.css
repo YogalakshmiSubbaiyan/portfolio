@@ -31,38 +31,102 @@ body {
 }
 
 .topbar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 16px 0 24px;
+  gap: 20px;
+  padding: 20px 12px; /* taller header */
+  width: 100%;
+  max-width: 1280px;
+  background: rgba(7, 18, 31, 0.82);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.06);
+  z-index: 120;
 }
 
 .brand {
   color: #f8fafc;
   text-decoration: none;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.28em;
   font-size: 0.95rem;
 }
 
 .topnav {
   display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
+  gap: 22px; /* increased spacing like reference */
+  align-items: center;
+  margin-left: auto; /* push nav to the right */
 }
 
 .topnav a {
-  color: #cbd5e1;
+  color: #9ca3af; /* light grey */
   text-decoration: none;
   font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  padding: 6px 4px;
 }
 
-.topnav a:hover {
-  color: #f8fafc;
+.topnav a:hover,
+.topnav a:focus,
+.topnav a:active,
+.topnav a.active {
+  color: #ffffff; /* white on focus/active */
+  outline: none;
+}
+
+.topnav a:focus-visible {
+  outline: 2px solid rgba(99,102,241,0.25);
+  outline-offset: 4px;
+}
+
+.top-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon-link {
+  display: inline-flex;
+  width: 36px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  color: #cbd5e1;
+  background: transparent;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.icon-link:hover {
+  color: #ffffff;
+}
+
+.resume-link {
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: transparent;
+  color: #cbd5e1;
+  border: 1px solid rgba(148,163,184,0.08);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.resume-link:hover {
+  color: #ffffff;
+  border-color: rgba(148,163,184,0.16);
 }
 
 .page-shell {
   width: 100%;
+  padding-top: 92px; /* reserve space for fixed header so content doesn't hide underneath */
+}
+
+html {
+  scroll-padding-top: 96px; /* ensures anchor jumps land below fixed header */
 }
 
 @media (max-width: 640px) {
