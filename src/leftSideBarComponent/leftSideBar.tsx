@@ -1,7 +1,6 @@
-import React from 'react';
 import './leftSideBar.css';
 import profilePhoto from '../assets/profile.jpg';
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 function LeftSideBarComponent() {
 

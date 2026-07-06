@@ -1,23 +1,23 @@
-import { useState } from 'react'
 import './App.css'
-import LeftSideBarComponent from './leftSideBarComponent/leftSideBar'
 import MainComponent from './mainComponent/mainComponent'
-import RightSideBarComponent from './rightSideBarComponent/rightSideBar'
-
 
 function App() {
-  
-
   return (
-    <>
-      <div className='appContainer'>
-        <div className='layout-container'>
-          <LeftSideBarComponent />
-          <MainComponent/>
-          <RightSideBarComponent/>
-        </div>
-      </div>
-    </>
+    <div className='appContainer'>
+      <header className='topbar'>
+        <a className='brand' href='#top'>YOGA</a>
+        <nav className='topnav'>
+          <a href='#about'>About</a>
+          <a href='#experience'>Experience</a>
+          <a href='#projects'>Projects</a>
+          <a href='#contact'>Contact</a>
+        </nav>
+      </header>
+
+      <main id='top' className='page-shell'>
+        <MainComponent />
+      </main>
+    </div>
   )
 }
 

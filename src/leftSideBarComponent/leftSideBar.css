@@ -1,153 +1,133 @@
 .left-sidebar {
-	padding: 10px;
-	margin: 0;
-	background-color: white;
-	border-radius: 10px;
-	box-shadow: none;
-	height: 100%;
-	box-sizing: border-box;
+  padding: 20px;
+  margin: 0;
+  background: rgba(8, 15, 28, 0.8);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(2, 8, 23, 0.24);
+  height: 100%;
+  box-sizing: border-box;
+  position: sticky;
+  top: 24px;
 }
 
-.personal-details {
-	border-bottom: 2px solid gray;
-	padding-bottom: 15px;
-	margin: 10px;
-	font-size: 14px;
+.personal-details,
+.language-details {
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
+  padding-bottom: 15px;
+  margin: 16px 0;
+  font-size: 14px;
+}
 
-	label {
-		font-weight: bold;
-		color: black
-	}
-
+.personal-details label,
+.language-details label {
+  font-weight: 700;
+  color: #f8fafc;
 }
 
 .profile-section {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
+}
 
-	h4 {
-		font-size: 20px;
-		margin: auto;
-		text-align: center;
-	}
+.profile-section h4 {
+  font-size: 20px;
+  margin: 12px 0 4px;
+  text-align: center;
+  color: #f8fafc;
+}
 
-	h6 {
-		margin: 0;
-		font-size: 12px;
-		color: grey;
-		text-align: center;
-	}
+.profile-section h6 {
+  margin: 0;
+  font-size: 12px;
+  color: #94a3b8;
+  text-align: center;
 }
 
 .profile-image {
-	width: 75%;
-	height: 75%;
-	align-items: center;
-	text-align: center;
-	border-radius: 50%;
-	display: block;
-	margin: 0 auto;
-
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid rgba(56, 189, 248, 0.35);
 }
 
 .detail-row {
-	display: flex;
-	justify-content: space-between;
-	padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  color: #cbd5e1;
+  gap: 8px;
 }
 
 .success {
-	color: green;
-}
-
-.progress-bar {
-	width: 100%;
-	height: 5px;
-	border: 1px solid grey;
-	border-radius: 15px;
-	font-size: 12px;
-
-}
-
-.progress-fill {
-	height: 100%;
-	background-color: cornflowerblue;
-	transition: width 0.3s ease;
-}
-
-.language-details {
-	padding-bottom: 15px;
-	margin: 10px;
-	border-bottom: 2px solid gray;
-	border-radius: 1px;
-
-	.detail-row {
-		font-size: 14px;
-		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	}
-
-	label {
-		font-weight: bold;
-		color: black
-	}
-
+  color: #4ade80;
 }
 
 .button-download {
-	width: 100%;
-	padding: 15px;
-	margin-top: 10px;
-	border: 1px solid cornflowerblue;
-	border-radius: 10px;
-	background-color: cornflowerblue;
-	color: white;
-	font-weight: bold;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
+  width: 100%;
+  padding: 12px 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.button-download:hover {
+  transform: translateY(-1px);
 }
 
 .social-links {
-	margin-top: 20px;
-	text-align: center;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 }
 
 .linkedin-icon,
 .github-icon {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 100%;
-	width: 100%;
-	color: white;
-	font-weight: bold;
-	font-size: 18px;
-	font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+}
+
+.linkedin-link,
+.github-link {
+  display: inline-flex;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .linkedin-link {
-	display: inline-block;
-	width: 25px;
-	height: 25px;
-	background-color: #0077b5;
-	border-radius: 5px;
-	text-decoration: none;
-	transition: background-color 0.3s ease;
+  background-color: #0077b5;
 }
 
 .github-link {
-	display: inline-block;
-	width: 25px;
-	height: 25px;
-	background-color: #333;
-	border-radius: 5px;
-	text-decoration: none;
-	transition: background-color 0.3s ease;
-	margin-left: 10px;
+  background-color: #333;
+}
+
+.github-link:hover,
+.linkedin-link:hover {
+  transform: translateY(-1px);
 }
 
 .github-link:hover {
-	background-color: #000;
+  background-color: #000;
 }
 
 .linkedin-link:hover {
-	background-color: cornflowerblue;
+  background-color: #0ea5e9;
 }

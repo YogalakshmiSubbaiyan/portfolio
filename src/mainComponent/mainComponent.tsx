@@ -1,17 +1,124 @@
 import './mainComponent.css'
 
+const experiences = [
+  {
+    role: 'Senior Frontend Engineer',
+    company: 'Product-focused teams',
+    period: '2023 — Present',
+    bullets: [
+      'Design and ship modern React interfaces for high-impact products.',
+      'Improve performance, accessibility, and maintainability across shared UI systems.',
+      'Work closely with design and product to turn complex flows into simple experiences.'
+    ]
+  },
+  {
+    role: 'Full Stack Developer',
+    company: 'Finance & data platforms',
+    period: '2020 — 2023',
+    bullets: [
+      'Built dashboards, automation tools, and internal applications used daily by teams.',
+      'Connected front-end experiences with robust APIs and thoughtful UX patterns.',
+      'Delivered reliable features in fast-moving, deadline-driven projects.'
+    ]
+  }
+]
+
+const projects = [
+  {
+    title: 'Operations Dashboard',
+    summary: 'A real-time analytics workspace for monitoring team performance and workflows.',
+    stack: ['React', 'TypeScript', 'Charts']
+  },
+  {
+    title: 'Client Portal',
+    summary: 'An elegant portal that simplified onboarding, service requests, and account actions.',
+    stack: ['Angular', 'Node.js', 'REST APIs']
+  }
+]
+
 export default function MainComponent() {
-    return (<>
+  return (
     <div className="mainComponent">
-        <div className="about-section">
-            <h5>I'm Yogalakshmi Subbaiyan</h5>
-            <p>Yoga is a passionate Full-Stack Developer with extensive experience building complex web applications for the finance and banking sector. Specializes in front-end development with expertise in Angular and React, combining strong technical skills with a keen eye for user-centric design."</p>
+      <section className="hero-section">
+        <div className="hero-copy">
+          <p className="eyebrow">Available for product-focused frontend work</p>
+          <h1>I build React frontends that ship.</h1>
+          <p className="hero-text">
+            I’m Yogalakshmi Subbaiyan, a full-stack developer focused on creating clean, user-centered interfaces that make complex products feel effortless.
+          </p>
+          <div className="hero-actions">
+            <a href="#projects" className="primary-btn">See projects</a>
+            <a href="mailto:yoga.subbaiyan@gmail.com" className="secondary-btn">Let’s talk</a>
+          </div>
+          <div className="hero-stats">
+            <span className="stat-pill">React</span>
+            <span className="stat-pill">TypeScript</span>
+            <span className="stat-pill">UI Systems</span>
+          </div>
         </div>
-        <h4>My Projects</h4>
-        <div className='project-layout'>
-           <div className='project'>Project 1</div> 
-           <div className='project'>Project 2</div>
+
+        <div className="hero-card">
+          <p className="hero-card-title">Currently focused on</p>
+          <ul>
+            <li>Designing scalable frontend architecture</li>
+            <li>Shipping thoughtful product experiences</li>
+            <li>Turning ideas into maintainable features</li>
+          </ul>
         </div>
+      </section>
+
+      <section id="about" className="content-section">
+        <h2>About</h2>
+        <p>
+          I enjoy turning ideas into usable, polished web experiences. My work blends strong engineering habits with an eye for detail, so products feel both performant and intuitive.
+        </p>
+      </section>
+
+      <section id="experience" className="content-section">
+        <h2>Experience</h2>
+        <div className="experience-list">
+          {experiences.map((item) => (
+            <article key={item.role} className="experience-item">
+              <div className="experience-header">
+                <h3>{item.role}</h3>
+                <span>{item.period}</span>
+              </div>
+              <p className="experience-company">{item.company}</p>
+              <ul>
+                {item.bullets.map((bullet) => (
+                  <li key={bullet}>{bullet}</li>
+                ))}
+              </ul>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="projects" className="content-section">
+        <h2>Selected work</h2>
+        <div className="project-grid">
+          {projects.map((project) => (
+            <article key={project.title} className="project-card">
+              <h3>{project.title}</h3>
+              <p>{project.summary}</p>
+              <div className="project-stack">
+                {project.stack.map((tech) => (
+                  <span key={tech}>{tech}</span>
+                ))}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="contact" className="content-section contact-section">
+        <h2>Get in touch</h2>
+        <p>If you are building something ambitious and want a frontend partner who cares about detail, let’s connect.</p>
+        <div className="hero-actions">
+          <a href="mailto:yoga.subbaiyan@gmail.com" className="primary-btn">Email me</a>
+          <a href="https://www.linkedin.com/in/yogalakshmi-yoga-subbaiyan-a5181094/" target="_blank" rel="noreferrer" className="secondary-btn">LinkedIn</a>
+        </div>
+      </section>
     </div>
-    </>)
+  )
 }
