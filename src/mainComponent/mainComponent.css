@@ -10,7 +10,8 @@
   display: grid;
   grid-template-columns: 1.5fr 0.8fr;
   gap: 20px;
-  padding: 32px;
+  margin-top: 10px;
+  padding: 40px 32px 32px;
   border-radius: 28px;
   background: linear-gradient(135deg, rgba(16, 24, 40, 0.95), rgba(33, 54, 89, 0.95));
   border: 1px solid rgba(148, 163, 184, 0.18);
@@ -220,6 +221,8 @@
 @media (max-width: 940px) {
   .hero-section {
     grid-template-columns: 1fr;
+    margin-top: 16px;
+    padding: 44px 24px 24px;
   }
 
   .skills-grid {

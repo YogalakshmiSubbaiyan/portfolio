@@ -173,4 +173,12 @@ html {
   .top-actions {
     justify-content: flex-start;
   }
+
+  .page-shell {
+    padding-top: 140px;
+  }
+
+  html {
+    scroll-padding-top: 140px;
+  }
 }
