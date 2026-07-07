@@ -129,6 +129,25 @@ html {
   scroll-padding-top: 96px; /* ensures anchor jumps land below fixed header */
 }
 
+@media (max-width: 940px) {
+  .topbar {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .topnav {
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .top-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
 @media (max-width: 640px) {
   .appContainer {
     padding: 16px;
@@ -138,5 +157,13 @@ html {
     flex-direction: column;
     align-items: flex-start;
     gap: 8px;
+  }
+
+  .topnav {
+    justify-content: flex-start;
+  }
+
+  .top-actions {
+    justify-content: flex-start;
   }
 }
