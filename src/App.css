@@ -130,6 +130,13 @@ html {
 }
 
 @media (max-width: 940px) {
+  .page-shell {
+    padding-top: 120px;
+  }
+
+  html {
+    scroll-padding-top: 120px;
+  }
   .topbar {
     align-items: flex-start;
     gap: 12px;
