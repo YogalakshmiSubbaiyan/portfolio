@@ -16,13 +16,13 @@ function App() {
         </nav>
 
         <div className='top-actions'>
-          <a href='https://www.linkedin.com/in/yogalakshmi-yoga-subbaiyan-a5181094/' target='_blank' rel='noreferrer' className='icon-link' aria-label='LinkedIn'>
+          <a href='https://www.linkedin.com/in/yogalakshmi-subbaiyan-a5181094/' target='_blank' rel='noreferrer' className='icon-link' aria-label='LinkedIn'>
             <FaLinkedin />
           </a>
           <a href='https://github.com/YogalakshmiSubbaiyan' target='_blank' rel='noreferrer' className='icon-link' aria-label='GitHub'>
             <FaGithub />
           </a>
-          <a href='/resume.pdf' target='_blank' rel='noreferrer' className='resume-link'>Resume</a>
+          <a href='/Yogalakshmi-Resume.pdf' target='_blank' rel='noreferrer' className='resume-link'>Resume</a>
         </div>
       </header>
 
