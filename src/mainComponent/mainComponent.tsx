@@ -37,14 +37,23 @@ const experiences = [
 
 const projects = [
   {
-    title: 'Operations Dashboard',
-    summary: 'A real-time analytics workspace for monitoring team performance and workflows.',
-    stack: ['React', 'TypeScript', 'Charts']
+    title: 'Spotlight | Enterprise Event Analytics Portal',
+    summary: 'A high-performance analytics dashboard designed for event managers to track live revenue data and handle heavy datasets.',
+    stack: ['Framework: React (with TypeScript)', 'Build Tool: Vite', 'Styling: Tailwind CSS'],
+    bullets:[
+      'URL-Driven State Sync: Synchronized all search inputs, status filters, and table sorting parameters directly with browser URL queries using React Router for persistent state bookmarking.',
+      'Data Architecture: High-performance filtering and conditional rendering rules targeting mock asynchronous transactional datasets.'
+    ],
+    liveUrl:'https://yogalakshmisubbaiyan.github.io/spotlight'
   },
   {
     title: 'Client Portal',
     summary: 'An elegant portal that simplified onboarding, service requests, and account actions.',
-    stack: ['Angular', 'Node.js', 'REST APIs']
+    stack: ['Angular', 'Node.js', 'REST APIs'],
+     corefeatures: 'cx',
+    bullets:[ 
+    ],
+    liveUrl:''
   }
 ]
 export default function MainComponent() {
@@ -150,6 +159,17 @@ export default function MainComponent() {
                   <span key={tech}>{tech}</span>
                 ))}
               </div>
+              <div className='project-features'>
+                <h3>Core Features Implemented:</h3>
+                <ul>
+                  {project.bullets.map((bullet) => (
+                    <li key={bullet}>{bullet}</li>
+                  ))}
+                </ul>
+              </div>
+              <a href={project.liveUrl} target="_blank" rel="noreferrer" className="contact-link">
+               <span>Live Website</span>
+               </a>
             </article>
           ))}
         </div>
