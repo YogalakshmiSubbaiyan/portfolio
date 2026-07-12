@@ -7,7 +7,7 @@ const experiences = [
     company: 'Bank of America Continuum India, Chennai',
     period: 'MAR 2022 — Present',
     bullets: [
-      'Developed and optimized core front-end components for multiple Bank of America applications, improving scalability and user experience.',
+      'Architected and scaled core front-end UI systems across enterprise banking portfolios, drastically reducing component re-render overhead and elevating cross-team delivery efficiency.',
       'Built a reusable Angular UI component library with responsive design and WCAG 2.1 accessibility standards.',
       'Led a virtual assistant initiative that improved search capabilities and developer portal effectiveness, saving the company half a million dollars.',
       'Received a Silver Award for consistent upskilling and learning-sharing, and multiple Bronze Awards for training and cross-functional growth.'
@@ -38,23 +38,25 @@ const experiences = [
 const projects = [
   {
     title: 'Spotlight | Enterprise Event Analytics Portal',
-    summary: 'A high-performance analytics dashboard designed for event managers to track live revenue data and handle heavy datasets.',
-    stack: ['Framework: React (with TypeScript)', 'Build Tool: Vite', 'Styling: Tailwind CSS'],
+    summary: 'An enterprise-grade analytics portal designed for venue managers to monitor real-time revenue streams, track ticket sales, and manipulate large transactional datasets. Engineered for performance, it utilizes dynamic data streams, debounced asynchronous filtering, and complete URL-driven state synchronization to ensure a seamless dashboard experience.',
+    stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
     bullets:[
-      'URL-Driven State Sync: Synchronized all search inputs, status filters, and table sorting parameters directly with browser URL queries using React Router for persistent state bookmarking.',
-      'Data Architecture: High-performance filtering and conditional rendering rules targeting mock asynchronous transactional datasets.'
-    ],
-    liveUrl:'https://yogalakshmisubbaiyan.github.io/spotlight'
-  },
-  {
-    title: 'SeatFlow | Interactive Event Reservation & High-Fidelity Ticketing Engine',
-    summary: 'SeatFlow is a production-grade consumer ticketing platform featuring an interactive visual seating matrix and a persistent session reservation timer. It guides users through a secure, validation-guarded multi-step checkout funnel that terminates in a high-fidelity animated confirmation view.',
-    stack: ['Framework: React (with TypeScript)', 'Build Tool: Vite', 'Styling: Tailwind CSS'],
-    bullets:[ 
       'URL-Driven Filter State: Syncs all search inputs, status tags, and sorting metrics directly to browser query parameters using React Router, allowing recruiters to bookmark or share an exact filtered data view.',
       'Performance Optimization Layers: Implements data debouncing, skeleton loaders, and a mock asynchronous data architecture to eliminate layout shifts and handle dense transactional event tracking efficiently.'
     ],
-    liveUrl:'https://yogalakshmisubbaiyan.github.io/seatflow/'
+    liveUrl:'https://yogalakshmisubbaiyan.github.io/spotlight',
+    githubUrl:'https://github.com/YogalakshmiSubbaiyan/spotlight'
+  },
+  {
+    title: 'SeatFlow | Interactive Event Booking Engine',
+    summary: 'SeatFlow is a production-grade consumer ticketing platform featuring an interactive visual seating matrix and a persistent session reservation timer. It guides users through a secure, validation-guarded multi-step checkout funnel that terminates in a high-fidelity animated confirmation view.',
+    stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
+    bullets:[ 
+      'Interactive Visual Seating Matrix: Renders a high-fidelity 10x12 grid managing multi-dimensional seat configurations (Available, Selected, Reserved) with optimized component rendering during rapid interactions.',
+      'Persistent Session Management: Implemented a custom synchronization hook utilizing localStorage to preserve a strict 5-minute checkout countdown across manual browser reloads, automatically releasing reserved inventory upon expiration.'
+    ],
+    liveUrl:'https://yogalakshmisubbaiyan.github.io/seatflow/',
+    githubUrl:'https://github.com/YogalakshmiSubbaiyan/seatflow'
   }
 ]
 export default function MainComponent() {
@@ -170,6 +172,9 @@ export default function MainComponent() {
               </div>
               <a href={project.liveUrl} target="_blank" rel="noreferrer" className="contact-link">
                <span>Live Website</span>
+               </a>
+               <a href={project.githubUrl} target="_blank" rel="noreferrer" className="contact-link">
+               <span>View Code</span>
                </a>
             </article>
           ))}
