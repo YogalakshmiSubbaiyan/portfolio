@@ -47,13 +47,14 @@ const projects = [
     liveUrl:'https://yogalakshmisubbaiyan.github.io/spotlight'
   },
   {
-    title: 'Client Portal',
-    summary: 'An elegant portal that simplified onboarding, service requests, and account actions.',
-    stack: ['Angular', 'Node.js', 'REST APIs'],
-     corefeatures: 'cx',
+    title: 'SeatFlow | Interactive Event Reservation & High-Fidelity Ticketing Engine',
+    summary: 'SeatFlow is a production-grade consumer ticketing platform featuring an interactive visual seating matrix and a persistent session reservation timer. It guides users through a secure, validation-guarded multi-step checkout funnel that terminates in a high-fidelity animated confirmation view.',
+    stack: ['Framework: React (with TypeScript)', 'Build Tool: Vite', 'Styling: Tailwind CSS'],
     bullets:[ 
+      'URL-Driven Filter State: Syncs all search inputs, status tags, and sorting metrics directly to browser query parameters using React Router, allowing recruiters to bookmark or share an exact filtered data view.',
+      'Performance Optimization Layers: Implements data debouncing, skeleton loaders, and a mock asynchronous data architecture to eliminate layout shifts and handle dense transactional event tracking efficiently.'
     ],
-    liveUrl:''
+    liveUrl:'https://yogalakshmisubbaiyan.github.io/seatflow/'
   }
 ]
 export default function MainComponent() {
