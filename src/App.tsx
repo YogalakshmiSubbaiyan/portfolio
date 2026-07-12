@@ -22,10 +22,9 @@ function App() {
           <a href='https://github.com/YogalakshmiSubbaiyan' target='_blank' rel='noreferrer' className='icon-link' aria-label='GitHub'>
             <FaGithub />
           </a>
-          <a href='/Yogalakshmi-Resume.pdf' target='_blank' rel='noreferrer' className='resume-link'>Resume</a>
+          <a href='/portfolio/Yogalakshmi-Resume.pdf' target='_blank' rel='noopener noreferrer' className='resume-link'>Resume</a>
         </div>
       </header>
-
       <main id='top' className='page-shell'>
         <MainComponent />
       </main>

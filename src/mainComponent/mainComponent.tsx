@@ -185,7 +185,7 @@ export default function MainComponent() {
         <h2>Get in touch</h2>
         <p>If you are building something ambitious and want a frontend partner who cares about detail, let’s connect.</p>
         <div className="contact-links">
-          <a href="/Yogalakshmi-Resume.pdf" target="_blank" rel="noreferrer" className="contact-link">
+          <a href='/portfolio/Yogalakshmi-Resume.pdf' target="_blank" rel="noreferrer" className="contact-link">
             <FaDownload />
             <span>Resume</span>
           </a>
