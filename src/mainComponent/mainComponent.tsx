@@ -36,19 +36,6 @@ const experiences = [
   }
 ]
 
-const projects = [
-  {
-    title: 'Spotlight | Enterprise Event Analytics Portal',
-    summary: 'An enterprise-grade analytics portal designed for venue managers to monitor real-time revenue streams, track ticket sales, and manipulate large transactional datasets. Engineered for performance, it utilizes dynamic data streams, debounced asynchronous filtering, and complete URL-driven state synchronization to ensure a seamless dashboard experience.',
-    stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
-    bullets:[
-      'URL-Driven Filter State: Syncs all search inputs, status tags, and sorting metrics directly to browser query parameters using React Router, allowing recruiters to bookmark or share an exact filtered data view.',
-      'Performance Optimization Layers: Implements data debouncing, skeleton loaders, and a mock asynchronous data architecture to eliminate layout shifts and handle dense transactional event tracking efficiently.'
-    ],
-    liveUrl:'https://yogalakshmisubbaiyan.github.io/spotlight',
-    githubUrl:'https://github.com/YogalakshmiSubbaiyan/spotlight'
-  }
-]
 export default function MainComponent() {
   return (
     <div className="mainComponent">
@@ -143,33 +130,6 @@ export default function MainComponent() {
       <section id="projects" className="content-section">
         <h2>Selected work</h2>
         <ProjectSpotlight />
-        <div className="project-grid">
-          {projects.map((project) => (
-            <article key={project.title} className="project-card">
-              <h3>{project.title}</h3>
-              <p>{project.summary}</p>
-              <div className="project-stack">
-                {project.stack.map((tech) => (
-                  <span key={tech}>{tech}</span>
-                ))}
-              </div>
-              <div className='project-features'>
-                <h3>Core Features Implemented:</h3>
-                <ul>
-                  {project.bullets.map((bullet) => (
-                    <li key={bullet}>{bullet}</li>
-                  ))}
-                </ul>
-              </div>
-              <a href={project.liveUrl} target="_blank" rel="noreferrer" className="contact-link">
-               <span>Live Website</span>
-               </a>
-               <a href={project.githubUrl} target="_blank" rel="noreferrer" className="contact-link">
-               <span>View Code</span>
-               </a>
-            </article>
-          ))}
-        </div>
       </section>
 
       <section id="contact" className="content-section contact-section">
