@@ -1,5 +1,6 @@
 import './mainComponent.css'
 import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa'
+import ProjectSpotlight from '../projectSpotlight/ProjectSpotlight'
 
 const experiences = [
   {
@@ -46,17 +47,6 @@ const projects = [
     ],
     liveUrl:'https://yogalakshmisubbaiyan.github.io/spotlight',
     githubUrl:'https://github.com/YogalakshmiSubbaiyan/spotlight'
-  },
-  {
-    title: 'SeatFlow | Interactive Event Booking Engine',
-    summary: 'SeatFlow is a production-grade consumer ticketing platform featuring an interactive visual seating matrix and a persistent session reservation timer. It guides users through a secure, validation-guarded multi-step checkout funnel that terminates in a high-fidelity animated confirmation view.',
-    stack: ['React', 'TypeScript', 'Vite', 'Tailwind CSS'],
-    bullets:[ 
-      'Interactive Visual Seating Matrix: Renders a high-fidelity 10x12 grid managing multi-dimensional seat configurations (Available, Selected, Reserved) with optimized component rendering during rapid interactions.',
-      'Persistent Session Management: Implemented a custom synchronization hook utilizing localStorage to preserve a strict 5-minute checkout countdown across manual browser reloads, automatically releasing reserved inventory upon expiration.'
-    ],
-    liveUrl:'https://yogalakshmisubbaiyan.github.io/seatflow/',
-    githubUrl:'https://github.com/YogalakshmiSubbaiyan/seatflow'
   }
 ]
 export default function MainComponent() {
@@ -152,6 +142,7 @@ export default function MainComponent() {
 
       <section id="projects" className="content-section">
         <h2>Selected work</h2>
+        <ProjectSpotlight />
         <div className="project-grid">
           {projects.map((project) => (
             <article key={project.title} className="project-card">
