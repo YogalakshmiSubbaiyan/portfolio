@@ -28,23 +28,7 @@ body {
   padding: 24px;
   max-width: 1280px;
   margin: 0 auto;
-}
-
-.topbar {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 20px 12px; /* taller header */
-  width: 100%;
-  max-width: 1280px;
-  background: rgba(7, 18, 31, 0.82);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(148, 163, 184, 0.06);
-  z-index: 120;
+  position: relative;
 }
 
 .brand {
@@ -57,24 +41,27 @@ body {
 
 .topnav {
   display: flex;
-  gap: 22px; /* increased spacing like reference */
+  gap: 10px;
   align-items: center;
-  margin-left: auto; /* push nav to the right */
 }
 
 .topnav a {
-  color: #9ca3af; /* light grey */
+  color: #e2e8f0;
   text-decoration: none;
   font-size: 0.95rem;
   letter-spacing: 0.02em;
-  padding: 6px 4px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  text-shadow: 0 1px 12px rgba(2, 8, 23, 0.55), 0 0 1px rgba(15, 23, 42, 0.7);
+  transition: color 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
 }
 
 .topnav a:hover,
 .topnav a:focus,
 .topnav a:active,
 .topnav a.active {
-  color: #ffffff; /* white on focus/active */
+  color: #ffffff;
+  opacity: 1;
   outline: none;
 }
 
@@ -99,6 +86,7 @@ body {
   background: transparent;
   border-radius: 8px;
   text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
 }
 
 .icon-link:hover {
@@ -109,10 +97,12 @@ body {
   padding: 8px 12px;
   border-radius: 999px;
   background: transparent;
-  color: #cbd5e1;
+  color: #e2e8f0;
   border: 1px solid rgba(148,163,184,0.08);
   text-decoration: none;
   font-weight: 600;
+  text-shadow: 0 1px 12px rgba(2, 8, 23, 0.55), 0 0 1px rgba(15, 23, 42, 0.7);
+  transition: color 0.2s ease, opacity 0.2s ease, border-color 0.2s ease;
 }
 
 .resume-link:hover {
@@ -122,31 +112,24 @@ body {
 
 .page-shell {
   width: 100%;
-  padding-top: 92px; /* reserve space for fixed header so content doesn't hide underneath */
+  padding-top: 0;
 }
 
 html {
-  scroll-padding-top: 96px; /* ensures anchor jumps land below fixed header */
+  scroll-padding-top: 28px;
 }
 
 @media (max-width: 940px) {
   .page-shell {
-    padding-top: 120px;
+    padding-top: 0;
   }
 
   html {
-    scroll-padding-top: 120px;
-  }
-  .topbar {
-    align-items: flex-start;
-    gap: 12px;
+    scroll-padding-top: 24px;
   }
 
   .topnav {
-    flex-wrap: wrap;
-    gap: 12px;
-    margin-left: 0;
-    width: 100%;
+    gap: 10px;
   }
 
   .top-actions {
@@ -160,14 +143,9 @@ html {
     padding: 16px;
   }
 
-  .topbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-  }
-
   .topnav {
     justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .top-actions {
@@ -175,10 +153,10 @@ html {
   }
 
   .page-shell {
-    padding-top: 140px;
+    padding-top: 0;
   }
 
   html {
-    scroll-padding-top: 140px;
+    scroll-padding-top: 20px;
   }
 }
