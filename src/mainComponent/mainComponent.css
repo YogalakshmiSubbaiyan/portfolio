@@ -189,17 +189,27 @@
 
 .skills-group {
   padding: 24px;
-  border: 1px solid rgba(148, 163, 184, 0.18);
+  border: 1px solid #30363d;
+  border-top: 2px solid #00e5ff;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.03);
+  background: #0d1117;
+  box-shadow: 0 12px 28px rgba(2, 8, 23, 0.28);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.skills-group:hover {
+  border-color: #00e5ff;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+  transform: translateY(-2px);
 }
 
 .skills-group h3 {
   margin: 0 0 12px;
-  color: #93c5fd;
+  color: #7dd3fc;
   font-size: 0.95rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.03em;
+  font-family: 'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
 }
 
 .skills-list {
@@ -210,13 +220,20 @@
 
 .skills-list span {
   padding: 8px 10px;
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  border: 1px solid #30363d;
   border-radius: 999px;
   color: #cbd5e1;
   font-size: 0.92rem;
   line-height: 1.4;
   text-align: center;
-  background: rgba(15, 23, 42, 0.45);
+  background: #0d1117;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.skills-list span:hover {
+  border-color: #00e5ff;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.3);
+  color: #e0f7ff;
 }
 
 @media (max-width: 940px) {

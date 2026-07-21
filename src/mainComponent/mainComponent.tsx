@@ -78,7 +78,7 @@ function HeroSplitScreen() {
   }, [activeSide])
 
   return (
-    <section id="about" className="relative flex min-h-[680px] w-full overflow-hidden rounded-[24px] border border-white/10 bg-[#0B0F19] shadow-[0_24px_80px_rgba(2,8,23,0.45)] md:h-screen md:max-h-screen md:rounded-[32px]">
+    <section id="about" className="relative flex min-h-[520px] w-full overflow-hidden rounded-[24px] border border-white/10 bg-[#0B0F19] shadow-[0_24px_80px_rgba(2,8,23,0.45)] md:h-[min(680px,calc(100svh-2rem))] md:min-h-[620px] md:rounded-[32px]">
       <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_top_left,rgba(56,189,248,0.16),transparent_34%),radial-gradient(circle_at_bottom_right,rgba(251,146,60,0.12),transparent_30%)]" />
 
       <div className={`absolute ${photoAnchorClass} top-1/2 z-30 hidden -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-4 transition-all duration-500 md:flex`}>
@@ -132,7 +132,7 @@ function HeroSplitScreen() {
                 </p>
 
                 <p className="max-w-3xl text-base leading-8 text-slate-300 sm:text-lg">
-                  I enjoy turning ideas into usable, refined web experiences. My work blends strong engineering habits with an eye for detail,
+                  I love turning ideas into usable, refined web experiences. My work blends strong engineering habits with an eye for detail,
                   creating products that are both performant and intuitive. I enjoy collaborating with cross-functional teams, solving complex
                   problems, and continuously learning new technologies to build better digital experiences.
                 </p>
@@ -178,7 +178,7 @@ function HeroSplitScreen() {
           <div className="absolute inset-0 bg-[linear-gradient(145deg,transparent,rgba(255,255,255,0.035),transparent)] opacity-20" />
 
           <div className="relative z-10 h-auto w-full overflow-visible md:h-full md:overflow-hidden">
-            <div className={`flex h-auto w-full max-w-none flex-col justify-start pt-8 transition-opacity duration-500 md:h-full md:pt-20 ${engineerActive ? 'pointer-events-none opacity-0' : 'opacity-100'}`}>
+            <div className={`flex h-auto w-full max-w-none flex-col justify-start pt-[22px] transition-opacity duration-500 md:h-full md:pt-[22px] ${engineerActive ? 'pointer-events-none opacity-0' : 'opacity-100'}`}>
               {!engineerActive && (
                 <button
                   type="button"
@@ -372,7 +372,7 @@ export default function MainComponent() {
       </section>
 
       <section id="projects" className="content-section">
-        <h2>Selected work</h2>
+        <h2>What I’ve Built</h2>
         <ProjectSpotlight />
       </section>
 
