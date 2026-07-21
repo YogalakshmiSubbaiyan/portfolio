@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa'
 function App() {
   return (
     <div className='appContainer'>
-      <header className='absolute top-6 left-1/2 -translate-x-1/2 z-50 w-[90%] max-w-4xl'>
+      <header className='sticky top-3 z-50 mx-auto w-full max-w-4xl'>
         <div className='flex flex-wrap items-center justify-center gap-4 rounded-full border border-white/10 bg-slate-900/70 px-6 py-3 shadow-lg backdrop-blur-md'>
           <nav className='topnav flex items-center justify-center gap-1 sm:gap-2'>
             <a href='#about'>About</a>
