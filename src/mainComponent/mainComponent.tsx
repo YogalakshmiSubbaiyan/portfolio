@@ -4,6 +4,11 @@ import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa'
 import ProjectSpotlight from '../projectSpotlight/ProjectSpotlight'
 import heroPhoto from '../assets/heroImage.png'
 import bofaCards from '../assets/card.png'
+import potteryPhoto from '../assets/pottery1.jpg'
+import paintingPhoto from '../assets/painting1.jpg'
+import craftsPhoto from '../assets/crafts1.jpg'
+import wallArtPhoto from '../assets/wallart.png'
+import quillingPhoto from '../assets/quilling.png'
 
 const experiences = [
   {
@@ -41,11 +46,11 @@ const experiences = [
 
 const engineerTech = ['React', 'TypeScript', 'C#', 'Angular', 'UI Systems']
 const artisanPhotos = [
-  { url: 'src/assets/pottery1.jpg', title: 'Handcrafted Ceramics' },
-  { url: 'src/assets/painting1.jpg', title: 'Handbuilding Pottery' },
-  { url: 'src/assets/crafts1.jpg', title: 'Handcrafted Ceramics' },
-  { url: 'src/assets/wallart.png', title: 'Wall Art' },
-  { url: 'src/assets/quilling.png', title: 'Paper Quilling Art' }
+  { url: potteryPhoto, title: 'Handcrafted Ceramics' },
+  { url: paintingPhoto, title: 'Handbuilding Pottery' },
+  { url: craftsPhoto, title: 'Handcrafted Ceramics' },
+  { url: wallArtPhoto, title: 'Wall Art' },
+  { url: quillingPhoto, title: 'Paper Quilling Art' }
 ]
 
 function HeroSplitScreen() {
